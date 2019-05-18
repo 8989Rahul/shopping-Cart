@@ -29,7 +29,7 @@ export default class Shopping extends Component {
             return (<ShoppingItem
             increment = {this.props.increment}
             decrement = {this.props.decrement}
-            key={items.id}
+            key={item.id}
             item={item} />)
           })}
         </div>
