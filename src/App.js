@@ -19,7 +19,7 @@ export default class App extends Component {
   handleDecrement = value => {
     const convertToNumber = Number(value)
     const checkOutcome = this.state.total_price - convertToNumber
-    if (checkOutcome > 0) {
+    if (checkOutcome >= 0) {
       this.setState({
         total_price: this.state.total_price - convertToNumber
       })
